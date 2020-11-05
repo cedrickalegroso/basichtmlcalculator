@@ -1,0 +1,61 @@
+/*fontt!*/
+
+@font-face {
+    font-family: Monument;
+    src: url(fonts/monumentextended-regular.otf);
+}
+
+
+/* HTML RESET */
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #feb600;
+}
+
+* {
+    font-family: Monument;
+}
+
+.mainwrap {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 65% 20%;
+    grid-template-areas: ". . ." ". form ." ". . .";
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+        color: white;
+    }
+    form {
+        grid-area: form;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.3);
+        input[type=text] {
+            font-size: 3rem;
+            width: 80%;
+            border: none;
+            color: rgba(0, 0, 0, 0.3)
+        }
+         :hover {
+            border: none;
+        }
+        input[type=button] {
+            padding: 10px;
+            font-size: 3rem;
+            width: auto;
+            border: none;
+            background-color: #210B5B;
+            color: white;
+        }
+        #answers {
+            display: none;
+            .blockedanswers {
+                display: inline-block;
+            }
+        }
+    }
+}

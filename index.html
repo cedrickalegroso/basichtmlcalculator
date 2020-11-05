@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CALC OH YAH</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="mainwrap">
+
+
+
+        <form>
+
+            <div id="form">
+
+                <h1>🧮 Calculator 🧮 </h1>
+
+                <input type="text" name="no1" id="no1" placeholder="Enter Number 1" required>
+                <br />
+                <br />
+
+                <input type="text" name="no2" id="no2" placeholder="Enter Number 2" required>
+                <br />
+
+                <br />
+
+                <div class="actions">
+
+                    <input type="button" onclick="reset()" value="Reset">
+                    <input type="button" onclick="caculate()" value="Calculate">
+
+                </div>
+
+
+                <br />
+                <br />
+
+
+            </div>
+
+
+            <div id="answers">
+
+                <h1>🧮 Answers 🧮 </h1>
+
+                <div class="blockedanswers">
+                    <label for="sum" style="color: white;">Sum</label>
+                    <br />
+                    <input type="text" name="sum" id="sum" disabled>
+                </div>
+
+
+                <div class="blockedanswers">
+                    <label for="difference" style="color: white;">Difference</label>
+                    <br />
+                    <input type="text" name="difference" id="difference" disabled>
+                </div>
+
+
+                <div class="blockedanswers">
+                    <label for="product" style="color: white;">Product</label>
+                    <br />
+                    <input type="text" name="product" id="product" disabled>
+                </div>
+
+                <div class="blockedanswers">
+                    <label for="quotient" style="color: white;">Quotient</label>
+                    <br />
+                    <input type="text" name="quotient" id="quotient" disabled>
+                </div>
+
+                <div class="actions">
+                    <br />
+
+                    <input type="button" onclick="newcalc()" value="Calculate Again!">
+
+
+                </div>
+
+            </div>
+
+            <h1 style="font-size: 2.5rem;">Developed with 💖 by <a href="http://cedrickalegroso.co/" target="_blank"> Cedrick Alegroso </a></h1>
+
+        </form>
+
+
+
+    </div>
+    <script src="script-dist.js"></script>
+
+</body>
+
+</html>
